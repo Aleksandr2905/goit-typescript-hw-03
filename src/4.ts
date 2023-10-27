@@ -16,7 +16,7 @@ class Person {
         this.key = key;
     }
 
-    getKey() {
+    getKey(): Key {
         return this.key;
     }
 }
@@ -30,7 +30,7 @@ abstract class House {
         this.key = key;
     }
 
-    comeIn(person: Person) {
+    comeIn(person: Person): void {
         if (this.door) {
             this.tenants.push(person)
         }
